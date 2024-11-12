@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lucida Sans',  sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  padding: 30px;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(/weatherApp/images/background.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 60px;
+  font-family: 'Creepster';
+}
+
+header h1 {
+  font-size: 48px;
+  color: #2e3e7d;
+}
+.input {
+  margin-top: 20px;
+}
+
+.input_text, .submit {
+  padding: 15px;
+  border-radius: 50px;
+  width: 400px;
+  height: 50px;
+  font-size: 18px;
+  margin: 5px;
+  border: none;
+}
+
+.input_text {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(12, 12, 12, 0.1);
+  padding-left: 50px;
+}
+
+.submit {
+  color: white;
+  cursor: pointer;
+  background-image: url(/weatherApp/images/button.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.submit:hover {
+  background-color: #0097a7;
+}
+
+.container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+
+}
+
+.card {
+  background: rgba(82, 145, 170, 0.4);
+  border-radius: 20px;
+  padding: 20px;
+  width: 45%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+ 
+}
+
+.card:hover {
+  transform: translateY(-1px);
+}
+
+.name {
+  font-size: 30px;
+  font-weight: bold;
+  color: #4e587e;
+  margin-bottom: 10px;
+}
+
+.icon img {
+  margin-top: 12px;
+  width: 120px;
+  height: 120px;
+
+}
+.tempDay{
+  font-size: 1.2rem;
+}
+.temperature, .description, .cloudiness {
+  font-size: 1.3em;
+  color: #2f2929;
+  margin: 5px 0;
+}
+
+.forecast-box {
+  width: 80%;
+  border-radius: 20px;
+  padding: 20px;
+  background-image: url(/weatherApp/images/forecast.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+    text-align: center;
+      color: #3d3d3e;
+}
+
+.forecast h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.forecast {
+  display: flex;
+  gap: 15px;
+  padding: 10px 0;
+  margin-top: 20px;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+
+}
+.forecast-day:hover {
+  transform: translateY(-5px);
+}
+
+.forecast-day img {
+  width: 50px;
+  height: 50px;
+  margin: 10px 0;
+}
+.forecast-day {
+  background: #ffffff;
+  padding: 15px;
+  min-width: 120px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.forecast-day p {
+  font-size: 14px;
+  color: #2f2929;
+}

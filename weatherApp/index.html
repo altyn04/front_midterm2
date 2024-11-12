@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="/weatherApp/style.css">
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+
+   <header>
+        <h1>Weather Forecast</h1>
+     </header>
+
+    <div class="input">
+        <input type="text" placeholder="Enter city name" class="input_text">
+        <input type="submit" value="Go" class="submit">
+      </div>
+    
+      <div class="container">
+        <div class="card">
+          <h1 class="name" id="name"></h1>
+          <div class="icon"></div>
+          <p class="temperature"></p>
+          <p class="cloudiness"></p>
+          <p class="description"></p>
+        </div>
+    
+        <div class="forecast-box">
+          <h2>Upcoming Weather</h2>
+          <div class="forecast" id="forecast"></div>
+        </div>
+      </div>
+    
+  <script src="/weatherApp/script.js"></script>
+</body>
+</html>
