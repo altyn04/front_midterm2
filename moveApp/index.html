@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link rel="stylesheet" href="/moveApp/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+ 
+</head>
+<body>
+    <header>
+        <h1>Movies Voyager</h1>
+    </header>
+
+    <div class="container">
+        <aside id="genre-section">
+            <div class="rating-class">
+                <h3>Rating:</h3>
+                <select id="rating">
+                    <option value="">All movies</option>
+                    <option value="8">8+</option>
+                    <option value="6">6+</option>
+                    <option value="4">5+</option>
+                </select></div>
+            <h2>Select Genres</h2>
+            <div id="genres"></div>
+          
+        </aside>
+
+       
+        <main id="main-content">
+            <div class="search-bar">
+                <input type="text" placeholder="Enter movie title..." id="search">
+            </div>
+            <div id="movie-grid" class="movie-grid"></div>
+            
+            <div class="page">
+                <button id="previous"><i class="bi bi-chevron-double-left"></i>
+                </button>
+                <span id="page-number">1</span>
+                <button id="next"><i class="bi bi-chevron-double-right"></i></button>
+            </div>
+        </main>
+    </div>
+
+    <script src="/moveApp/scripts.js"></script>
+</body>
+</html>

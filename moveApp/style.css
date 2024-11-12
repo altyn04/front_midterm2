@@ -1,0 +1,172 @@
+
+body {
+    font-family:  'Ysabeau Infant', sans-serif;
+    background-color:  #5b3264;
+    color: #242424;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    background-color: #cb82e6;;
+    color: #fefeff;
+    border-bottom:3px solid#242424;
+    padding: 0.4rem;
+    font-size: 1.2rem;
+    font-family: 'Press Start 2P';
+   
+}
+.container {
+    display: flex;
+}
+
+#genre-section {
+    width: 15%;
+    border-right:3px solid#242424;
+    border-bottom:3px solid#242424;
+    padding: 30px;
+    background-color: #571080;
+    
+}
+
+#genres {
+    display: flex;
+    gap: 18px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+ h2 {
+    color: #fefeff;
+    border-bottom: 1px solid #fefeff;
+    border-top: 1px solid #fefeff;
+    text-align: center;
+    padding: 10px;
+}
+.genre {
+    background-color: #6c319f;
+    border-radius: 4.5px;
+    color: #fefeff;
+    padding: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+
+.genre.selected {
+    background-color: #a78209;
+}
+#rating {
+    width: 52%;
+    height: 40px;
+    font-size: 1rem;
+    padding: 5px;
+    margin-top: 10px;
+}
+.rating-class{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#genre-section h3 {
+    color: #ffc400;
+    margin-top: 30px;
+    font-size: 1.4rem;
+    padding: 8px;
+    text-align: center;
+    border-left: 2px solid #ffc400;
+    
+    
+}
+
+#main-content {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+}
+#search {
+    width: 35.7%;
+    padding: 0.5rem;
+    padding-left: 30px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+
+   
+}
+.search-bar {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 20px;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 2fr));
+    gap: 20px;
+}
+
+.movie {
+    background-color: #cb82e6;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+    padding: 9px;
+}
+.movie span{
+    color: #571080;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.movie span p{
+     color: #ffc400;
+     font-size: 1.2rem;
+}
+.movie img {
+    width:100%;
+    border-radius: 6px;
+}
+
+.movie h3 {
+    font-size: 1.3rem;
+    margin: 10px 0;
+    color: #571080;
+    padding: 8px;
+    text-align: center;
+    border-bottom: 2px solid #571080;
+}
+
+.movie button {
+    background-color: #ffc400;
+    color: white;
+    padding: 8px;
+    width: 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: auto;
+
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+    align-items: center;
+}
+
+.page button {
+    padding: 8px 15px;
+    cursor: pointer;
+    background-color: #5a2a83;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
